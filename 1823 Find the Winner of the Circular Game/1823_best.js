@@ -1,0 +1,14 @@
+/**
+ * @param {number} n
+ * @param {number} k
+ * @return {number}
+ */
+var findTheWinner = function(n, k) {
+    let winner = 0;
+    for (let i = 2; i <= n; i++) {
+        winner = (winner + k) % i;
+    }
+    return winner+1
+};
+
+// this solution left me completely baffled
