@@ -159,7 +159,6 @@ function BFS(g, n) {
     return res;
 }
 
-
 function Queue() {
   this.head = null;
   this.tail = null;
