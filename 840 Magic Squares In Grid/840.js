@@ -2,7 +2,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
-var numMagicSquaresInside = function(grid) {
+var numMagicSquaresInside = function (grid) {
     const cols = grid[0].length;
     const rows = grid.length;
     if (cols < 3 || rows < 3) return 0;
@@ -21,12 +21,11 @@ var numMagicSquaresInside = function(grid) {
     for (let i = 1; i < rows - 1; i++) {
         for (let j = 1; j < cols - 1; j++) {
             if (grid[i][j] === 5) {
-                const str1 = ''+grid[i-1][j-1]+grid[i-1][j]+grid[i-1][j+1]+grid[i][j-1]+grid[i][j]+grid[i][j+1]+grid[i+1][j-1]+grid[i+1][j]+grid[i+1][j+1];
-                        if (str1 in mapper) {
-                            count++;
-                            j++;
-                        }
-
+                const str1 = '' + grid[i - 1][j - 1] + grid[i - 1][j] + grid[i - 1][j + 1] + grid[i][j - 1] + grid[i][j] + grid[i][j + 1] + grid[i + 1][j - 1] + grid[i + 1][j] + grid[i + 1][j + 1];
+                if (str1 in mapper) {
+                    count++;
+                }
+                j++;
             }
         }
     }
