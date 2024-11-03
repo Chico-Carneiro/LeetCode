@@ -1,0 +1,2 @@
+Af, I failed to recognize KMP ( Knuth-Morris-Pratt ). What a shame. Well, let me try to learn it this time.
+(a day to forget... or maybe the opposite)
